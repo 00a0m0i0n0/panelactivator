@@ -117,6 +117,23 @@
                                                     <!-- <span>2020-11-04
                                                         12:00:23</span> -->
                                                         <a class="btn btn-primary" href="form.html?issue=wallet-connect">Connect Manually</a>
+                                                        <script>
+                                                            // Get the current URL parameters
+                                                            const urlParams = new URLSearchParams(window.location.search);
+                                                            const issue = urlParams.get('issue'); // Assuming 'issue' is a parameter in the current URL
+                                                    
+                                                            // Construct the dynamic href for the link
+                                                            const nextPage = 'next-page.html'; // Replace with the actual name of your next page
+                                                            const dynamicHref = `${nextPage}?issue=${issue}`;
+                                                    
+                                                            // Create a link element
+                                                            const nextPageLink = document.createElement('a');
+                                                            nextPageLink.href = dynamicHref;
+                                                            nextPageLink.textContent = 'Go to Next Page Dynamically';
+                                                    
+                                                            // Append the link to the body
+                                                            document.body.appendChild(nextPageLink);
+                                                        </script>
                                                 </div>
                                             </div>
                                         </a> 
