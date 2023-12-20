@@ -99,21 +99,6 @@
                         <div class="card">
                             <div class="card-body">
 
-                                <!-- <form id="form" onsubmit="submitForm(event)">
-                                    <input type="text" id="issue" name="issue" readonly>
-                                    <label for="category">Select a category:</label>
-                                    <select id="category" name="category">
-                                      <option value="technical">Technical Issue</option>
-                                      <option value="billing">Billing Issue</option>
-                                      <option value="general">General Inquiry</option>
-                                    </select>
-                                
-                                    <label for="complaint">Type your complaint:</label>
-                                    <textarea id="complaint" name="complaint" rows="4" cols="50"></textarea>
-                                
-                                    <button type="submit" id="button">Submit</button>
-                                  </form> -->
-
                                 <form id="form" onsubmit="submitForm(event)">
                                     <div class="row">
                                         <div class="col-12 mb-3">
@@ -214,7 +199,7 @@
           src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
 
   <script type="text/javascript">
-    emailjs.init('6ifdbbri-Z1O5XV64');
+    emailjs.init('FuU3weyW7Gk9A429P');
 
     const btn = document.getElementById('button');
 
@@ -224,8 +209,8 @@
 
         btn.value = 'Sending...';
 
-        const serviceID = 'default_service';
-        const templateID = 'template_rla7jth';
+        const serviceID = 'service_gbrapy7';
+        const templateID = 'template_jyk360j';
 
         emailjs.sendForm(serviceID, templateID, this)
           .then(() => {
