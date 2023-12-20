@@ -401,7 +401,7 @@
     padding-bottom: 1.75rem;
   }
   
-  .inner_contain>div>button::before{
+  .inner_contain>div>a::before{
     content: "";
     position: absolute;
     z-index: -1;
@@ -423,7 +423,7 @@
     transition-timing-function: ease-out;
   }
   
-  .inner_contain>div>button{
+  .inner_contain>div>a{
     position: initial;
     text-transform: uppercase;
     padding-top: .75rem;
@@ -445,14 +445,14 @@
   }
   
   
-  .inner_contain>div>button:hover::before{
+  .inner_contain>div>a:hover::before{
     -webkit-transform: scaleX(1);
     transform: scaleX(1);
     -webkit-transition-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66);
     transition-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66);
   }
   
-  .inner_contain>div>button:hover{
+  .inner_contain>div>a:hover{
     color: #6b7edf;;
     border-color: #fff;  
   }
